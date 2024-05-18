@@ -1,0 +1,107 @@
+.nav {
+  color: blue;
+}
+
+.primary {
+  color: #ff7000;
+  color: #fff1e6;
+}
+
+.dark {
+  color: #000000;
+  color: #0f1117;
+  color: #151821;
+  color: #212734;
+  color: #101012;
+}
+
+.light {
+  color: #ffffff;
+  color: #f4f6f8;
+  color: #fdfdfd;
+  color: #dce3f1;
+  color: #7b8ec8;
+  color: #858ead;
+}
+
+.accent-blue {
+  color: #1da1f2;
+}
+
+/* .boxShadow: { */
+
+.light-100 {
+  color: rgba(184, 184, 184, 0.03);
+  color: rgba(184, 184, 184, 0.02);
+  color: rgba(184, 184, 184, 0.03);
+}
+
+.light-200 {
+  color: rgba(218, 213, 213, 0.1);
+}
+.light-300 {
+  color: rgba(218, 213, 213, 0.1);
+}
+.dark-100 {
+  color: rgba(46, 52, 56, 0.1);
+}
+.dark-200 {
+  color: (39, 36, 36, 0.04);
+}
+/* }, */
+
+/* ****************************************************** */
+/* ****************************************************** */
+/* ****************************************************** */
+
+.nav {
+  color: blue;
+}
+
+.primary {
+  color: #0051ff;
+  color: #e6ecff;
+}
+
+.dark {
+  color: #000000;
+  color: #0f1117;
+  color: #151821;
+  color: #212734;
+  color: #101012;
+}
+
+.light {
+  color: #ffffff;
+  color: #f4f6f8;
+  color: #fdfdfd;
+  color: #dce3f1;
+  color: #7b8ec8;
+  color: #858ead;
+}
+
+.accent-blue {
+  color: #1da1f2;
+}
+
+/* .boxShadow: { */
+
+.light-100 {
+  color: rgba(184, 184, 184, 0.03);
+  color: rgba(184, 184, 184, 0.02);
+  color: rgba(184, 184, 184, 0.03);
+}
+
+.light-200 {
+  color: rgba(218, 213, 213, 0.1);
+}
+.light-300 {
+  color: rgba(218, 213, 213, 0.1);
+}
+.dark-100 {
+  color: rgba(46, 52, 56, 0.1);
+}
+.dark-200 {
+  color: (39, 36, 36, 0.04);
+}
+/* }, */

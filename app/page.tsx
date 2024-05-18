@@ -1,6 +1,5 @@
 import { auth } from "@/edgedb";
 import Link from "next/link";
-import NextSteps from "@/components/NextSteps";
 
 export default async function Home() {
   const session = auth.getSession();
@@ -21,7 +20,7 @@ export default async function Home() {
                   href={auth.getBuiltinUIUrl()}
                   className="text-sm font-semibold leading-6 text-gray-800"
                 >
-                  <button className="ring-2 ring-inset ring-primary bg-primarylight px-4 py-2 rounded-md">
+                  <button className="ring-primary bg-primarylight rounded-md px-4 py-2 ring-2 ring-inset">
                     Sign in
                   </button>
                 </Link>
@@ -29,7 +28,7 @@ export default async function Home() {
                   href={auth.getBuiltinUISignUpUrl()}
                   className="text-sm font-semibold leading-6 text-gray-900"
                 >
-                  <button className="bg-primary px-4 py-2 rounded-md text-white">
+                  <button className="bg-primary rounded-md px-4 py-2 text-white">
                     Sign up
                   </button>
                 </Link>
@@ -39,7 +38,7 @@ export default async function Home() {
                 href="dashboard"
                 className="text-sm font-semibold leading-6 text-gray-900"
               >
-                <button className="bg-primary px-4 py-2 rounded-md text-white">
+                <button className="bg-primary rounded-md px-4 py-2 text-white">
                   Dashboard
                 </button>
               </Link>
@@ -63,9 +62,7 @@ export default async function Home() {
             </p>
           </div>
         </div>
-        <div className="mx-auto max-w-2xl pt-4 sm:pt-8 lg:pt-12">
-          <NextSteps />
-        </div>
+        <div className="mx-auto max-w-2xl pt-4 sm:pt-8 lg:pt-12"></div>
       </div>
     </div>
   );
