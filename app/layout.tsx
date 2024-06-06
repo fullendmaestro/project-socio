@@ -1,7 +1,7 @@
+import { Inter, Space_Grotesk } from "next/font/google";
 import "@radix-ui/themes/styles.css";
 import { Theme } from "@radix-ui/themes";
 import React from "react";
-import { Inter, Space_Grotesk } from "next/font/google";
 import type { Metadata } from "next";
 
 import "./globals.css";
@@ -34,7 +34,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${spaceGrotesk.variable}`}>
+      <body className={`${inter.variable} ${spaceGrotesk.variable} `}>
         <Theme>
           <ThemeProvider>{children}</ThemeProvider>
         </Theme>

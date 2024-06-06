@@ -9,28 +9,18 @@ export const themes = [
 export const sidebarLinks: SidebarLink[] = [
   {
     imgURL: "/assets/icons/home.svg",
-    route: "/",
+    route: "/home",
     label: "Home",
   },
   {
     imgURL: "/assets/icons/home.svg",
-    route: "/tasks",
-    label: "Tasks",
-  },
-  {
-    imgURL: "/assets/icons/home.svg",
-    route: "/projects",
+    route: "/project",
     label: "Projects",
   },
   {
     imgURL: "/assets/icons/home.svg",
-    route: "/boards",
-    label: "Boards",
-  },
-  {
-    imgURL: "/assets/icons/home.svg",
-    route: "/analytics",
-    label: "Analytics",
+    route: "/backlogs",
+    label: "Backlogs",
   },
   {
     imgURL: "/assets/icons/home.svg",
@@ -39,12 +29,12 @@ export const sidebarLinks: SidebarLink[] = [
   },
   {
     imgURL: "/assets/icons/home.svg",
-    route: "/rewards",
-    label: "Rewards",
+    route: "/profile",
+    label: "Profile",
   },
   {
     imgURL: "/assets/icons/home.svg",
-    route: "/profile",
-    label: "Profile",
+    route: "/rewards",
+    label: "Rewards",
   },
 ];

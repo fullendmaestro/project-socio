@@ -1,31 +1,197 @@
 import React from "react";
 import NewProjectCard from "./NewProjectCard";
+import Team from "./Team";
 
 const projects = [
   {
     _id: 1,
     title: "Database integration",
     url: "assets/icons/avatar",
-    category: "app",
+    category: "App",
+    teams: [
+      {
+        _id: 1,
+        fullName: "Afolabi Abdulsamad",
+        url: "assets/icons/avatar",
+        category: "App",
+      },
+      {
+        _id: 2,
+        fullName: "AAAAA BBBBB",
+        url: "assets/icons/avatar",
+        category: "App",
+      },
+      {
+        _id: 3,
+        fullName: "UI testing",
+        url: "assets/icons/avatar",
+        category: "App",
+      },
+      {
+        _id: 4,
+        fullName: "CCC DDDDDDD",
+        url: "assets/icons/avatar",
+        category: "App",
+      },
+      {
+        _id: 5,
+        fullName: "EEEEEE FFFFF",
+        url: "assets/icons/avatar",
+        category: "App",
+      },
+    ],
   },
   {
     _id: 2,
     title: "API integration",
     url: "assets/icons/avatar",
-    category: "app",
+    category: "App",
+    teams: [
+      {
+        _id: 1,
+        fullName: "Afolabi Abdulsamad",
+        url: "assets/icons/avatar",
+        category: "App",
+      },
+      {
+        _id: 2,
+        fullName: "AAAAA BBBBB",
+        url: "assets/icons/avatar",
+        category: "App",
+      },
+      {
+        _id: 3,
+        fullName: "UI testing",
+        url: "assets/icons/avatar",
+        category: "App",
+      },
+      {
+        _id: 4,
+        fullName: "CCC DDDDDDD",
+        url: "assets/icons/avatar",
+        category: "App",
+      },
+      {
+        _id: 5,
+        fullName: "EEEEEE FFFFF",
+        url: "assets/icons/avatar",
+        category: "App",
+      },
+    ],
   },
-  { _id: 3, title: "UI testing", url: "assets/icons/avatar", category: "app" },
+  {
+    _id: 3,
+    title: "UI testing",
+    url: "assets/icons/avatar",
+    category: "App",
+    teams: [
+      {
+        _id: 1,
+        fullName: "Afolabi Abdulsamad",
+        url: "assets/icons/avatar",
+        category: "App",
+      },
+      {
+        _id: 2,
+        fullName: "AAAAA BBBBB",
+        url: "assets/icons/avatar",
+        category: "App",
+      },
+      {
+        _id: 3,
+        fullName: "UI testing",
+        url: "assets/icons/avatar",
+        category: "App",
+      },
+      {
+        _id: 4,
+        fullName: "CCC DDDDDDD",
+        url: "assets/icons/avatar",
+        category: "App",
+      },
+      {
+        _id: 5,
+        fullName: "EEEEEE FFFFF",
+        url: "assets/icons/avatar",
+        category: "App",
+      },
+    ],
+  },
   {
     _id: 4,
     title: "Project Socio",
     url: "assets/icons/avatar",
-    category: "app",
+    category: "App",
+    teams: [
+      {
+        _id: 1,
+        fullName: "Afolabi Abdulsamad",
+        url: "assets/icons/avatar",
+        category: "App",
+      },
+      {
+        _id: 2,
+        fullName: "AAAAA BBBBB",
+        url: "assets/icons/avatar",
+        category: "App",
+      },
+      {
+        _id: 3,
+        fullName: "UI testing",
+        url: "assets/icons/avatar",
+        category: "App",
+      },
+      {
+        _id: 4,
+        fullName: "CCC DDDDDDD",
+        url: "assets/icons/avatar",
+        category: "App",
+      },
+      {
+        _id: 5,
+        fullName: "EEEEEE FFFFF",
+        url: "assets/icons/avatar",
+        category: "App",
+      },
+    ],
   },
   {
     _id: 5,
     title: "Fixed glittering bug",
     url: "assets/icons/avatar",
-    category: "app",
+    category: "App",
+    teams: [
+      {
+        _id: 1,
+        fullName: "Afolabi Abdulsamad",
+        url: "assets/icons/avatar",
+        category: "App",
+      },
+      {
+        _id: 2,
+        fullName: "AAAAA BBBBB",
+        url: "assets/icons/avatar",
+        category: "App",
+      },
+      {
+        _id: 3,
+        fullName: "UI testing",
+        url: "assets/icons/avatar",
+        category: "App",
+      },
+      {
+        _id: 4,
+        fullName: "CCC DDDDDDD",
+        url: "assets/icons/avatar",
+        category: "App",
+      },
+      {
+        _id: 5,
+        fullName: "EEEEEE FFFFF",
+        url: "assets/icons/avatar",
+        category: "App",
+      },
+    ],
   },
 ];
 
@@ -59,12 +225,7 @@ const ProjectCard = () => {
                       x-for="user in project.users"
                       className="flex justify-end -space-x-1.5 sm:justify-start lg:justify-end xl:justify-start"
                     >
-                      <img
-                        src={"/assets/icons/avatar"}
-                        alt={"user.name"}
-                        className="size-6 rounded-full bg-slate-100 ring-2 ring-white"
-                        loading="lazy"
-                      />
+                      <Team teams={project.teams} />
                     </dd>
                   </div>
                 </dl>

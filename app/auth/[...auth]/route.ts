@@ -28,7 +28,7 @@ export const { GET, POST } = auth.createAuthRouteHandlers({
         }
       `);
     }
-    redirect("/");
+    redirect("/home");
   },
   onSignout() {
     redirect("/");
